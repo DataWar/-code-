@@ -21,7 +21,7 @@ Here is a video on how to get `run` running:
 
 Once setup, you can setup the CLI or HTTP environment to run the necessary code.
 
-There is a bit of casperjs (bad idea) or selenenium (good idea) within the python framework (argh!, but sometimes you must use crappy languages)
+There is a bit of casperjs (bad idea) or selenenium (good idea) within the python framework (argh!, but sometimes you must use crappy languages to 'git R done')
 
 ## Data
 
