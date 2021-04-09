@@ -1,0 +1,749 @@
+svn.id|username|date|lines.edited|description
+r79997|urbaneks|2021-02-12 15:13:32|1|fix context memory mgmt in Cocoa Quartz (fixes live drawing in Big Sur)
+r79996|kalibera|2021-02-12 04:27:23|4|Fix usage help for Rterm: it does not support <,> redirection arguments, [n] those are implemented by the shell.  Related to 77926, before which [n] redirection arguments were interpreted by a shell used internally in R.exe.
+r79995|kalibera|2021-02-12 03:07:03|2|comment
+r79994|ripley|2021-02-12 01:49:24|1|update
+r79993|ripley|2021-02-12 01:40:27|1|submitted fr updates
+r79992|ripley|2021-02-12 01:27:25|1|update the translations templates
+r79991|ripley|2021-02-11 23:59:23|1|update for macOS
+r79990|ripley|2021-02-11 11:39:04|1|remove a couple of references to Fortran 77
+r79989|ripley|2021-02-11 03:59:04|1|add comment
+r79988|murrell|2021-02-10 12:30:00|1|added mention of grSoftVersion() to ?capabilities (thanks to Dirk Eddelbuettel, PR # 18056)
+r79987|ripley|2021-02-10 11:44:31|1|updates
+r79986|hornik|2021-02-10 11:38:35|1|Add 'tinytest' to list of test-suite packages.
+r79985|hornik|2021-02-10 11:36:54|1|Document fixing PR#18048 and PR#18053.
+r79984|hornik|2021-02-10 11:35:35|1|Spelling.
+r79983|kalibera|2021-02-10 03:45:48|3|Remove package-specific hack (the package no longer maintainer on CRAN). [n] From Sebastian Meyer.
+r79981|ripley|2021-02-10 00:41:57|1|bug fix for cairo-based graphics on macOS, code clean up
+r79980|ripley|2021-02-09 22:37:56|1|exclude Windows which has cairo-ft but incorrect paths
+r79979|pd|2021-02-09 16:21:08|1|maintainer-mode changes
+r79977|maechler|2021-02-09 12:50:57|1|cross \link{}; less #ifdef; cosmetic
+r79976|ripley|2021-02-09 09:42:30|1|tweaks to cairo support including how cairoFT is reported
+r79975|ripley|2021-02-09 03:41:51|1|typo
+r79974|ripley|2021-02-09 03:13:35|1|make uses of static cairo available on all platforms and optional on macOS
+r79973|ripley|2021-02-09 00:56:50|1|add comments
+r79972|ripley|2021-02-09 00:16:40|1|update comments
+r79971|maechler|2021-02-08 08:45:17|2|\link{basename} and dirname in `See Also`; [n] thanks to Michael Chirico, PR # 18049
+r79970|ripley|2021-02-08 08:15:24|1|update
+r79969|kalibera|2021-02-08 07:51:06|3|Improve detection of translation domain (protect fix, avoid unnecessary [n] copy).
+r79967|ripley|2021-02-08 06:55:19|1|updates, including for yesterday's hyperref update
+r79966|maechler|2021-02-08 06:45:53|2|only if(<NLS>); set LC_CTYPE also on Windows; 4x4 grepl-statistics; [n] re-activate test
+r79965|kalibera|2021-02-08 05:30:04|2|Improve error messages from Renviron processing, mbcs-aware truncation.
+r79963|hornik|2021-02-07 09:20:03|1|Correction.  By Duncan Murdoch <murdoch.duncan@gmail.com>.
+r79962|hornik|2021-02-07 09:17:31|1|Fix PR#18053 and more.  Thanks to Christopher Carbone.
+r79961|ripley|2021-02-07 08:19:31|1|allow for pangocairo builds on Homebrew
+r79960|hornik|2021-02-07 04:57:42|1|Add gregexec().  From Brodie Gaslam.
+r79959|hornik|2021-02-07 04:50:19|1|Fix PR#18044.  By Sebastian Meyer.
+r79958|hornik|2021-02-07 04:47:57|1|Fix PR#17822.  Thanks to Michael Chirico and Sebastian Meyer.
+r79957|hornik|2021-02-07 04:44:46|1|Fix PR#18048.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79956|hornik|2021-02-07 04:42:21|1|Fix PR#16408.  Thanks to Benjamin Tyner <btyner@gmail.com>.
+r79955|ripley|2021-02-07 03:26:23|1|apply patch from Brodie Gaslam
+r79954|hornik|2021-02-07 01:46:15|1|Spelling.
+r79952|ripley|2021-02-06 13:04:46|1|update
+r79950|ripley|2021-02-06 03:10:06|1|Updates for XQuartz betas
+r79948|ripley|2021-02-06 00:21:31|1|mention endian.h
+r79947|maechler|2021-02-05 08:43:06|1|typo
+r79946|maechler|2021-02-05 07:19:38|2|disable test for now: despite all efforts, is still too platform dependent
+r79945|maechler|2021-02-05 02:43:15|1|improve, using R_alloc()
+r79944|maechler|2021-02-05 00:26:55|1|using "é" in grep pattern fails on Windows
+r79942|maechler|2021-02-04 23:57:52|1|the *code* for 79936: detect translation domain (PR17998)
+r79941|pd|2021-02-04 16:20:01|1|maintainer-mode changes
+r79936|maechler|2021-02-04 12:25:59|1|find translation domain e.g. for base-errors in top-level functions
+r79935|maechler|2021-02-04 12:13:13|1|clarify process_Renviron() "logic"
+r79934|kalibera|2021-02-04 01:01:57|2|Increase buffer size in Renviron processing (PR#18001).
+r79933|kalibera|2021-02-03 10:45:24|3|Improve error reporting and avoid crashes when Renviron includes too long [n] lines (PR#18001).
+r79931|kalibera|2021-02-03 06:20:18|3|Fix invalid memory deallocation and buffer overrun in fifo implementation on [n] Windows.  Fix detection of binary mode.  (PR#18031, PR#15600)
+r79930|ripley|2021-02-03 04:47:42|1|add info for the likes of mallinfo
+r79929|ripley|2021-02-02 05:49:02|1|add warning on cmake (for which an arm64 version is now available)
+r79928|ripley|2021-02-02 03:19:56|1|update
+r79926|ripley|2021-02-02 03:10:22|3|mention 'timeout' for macOS [n] docuemnt tracing loadNamespace()
+r79925|kalibera|2021-02-02 01:34:40|2|Typos in comments (PR#18046).
+r79922|maechler|2021-02-01 13:37:16|1|checkRdafiles() $version bug fix
+r79920|ripley|2021-02-01 07:22:57|1|another typo
+r79919|ripley|2021-02-01 07:15:58|1|typo in r79918
+r79918|maechler|2021-02-01 06:07:32|1|extended for `fixed` arg, plus ex., thanks to Rolf Turner
+r79917|ripley|2021-02-01 06:07:10|1|add/update compiled translations
+r79916|maechler|2021-02-01 05:53:09|1|ported r79853 [as.data.frame.list(L, row.names)] from trunk to R-4-0
+r79915|maechler|2021-02-01 03:32:56|1|also disable <DOTSXP> `$` subsetting
+r79914|ripley|2021-02-01 02:31:11|1|do not by default report missing namespaces with where="<unknown>"
+r79913|maechler|2021-02-01 02:17:11|1|comment cosmetic
+r79912|ripley|2021-01-31 09:34:54|1|allow tracing of loadNamespace, show calls for missing namespace warnings
+r79911|ripley|2021-01-30 07:56:16|1|tweaks
+r79910|ripley|2021-01-30 07:54:33|1|twek comment
+r79909|ripley|2021-01-30 04:57:02|1|update for XQuartz beta
+r79906|ripley|2021-01-30 00:56:13|1|better align OlsonNames with Sys.timezone
+r79905|ripley|2021-01-30 00:55:45|1|update note
+r79902|ripley|2021-01-29 23:58:48|1|add comment
+r79901|ripley|2021-01-29 23:48:27|1|avoid setting TZDIR to a value other applications may not recognize
+r79899|ripley|2021-01-29 12:31:11|1|update
+r79897|maechler|2021-01-29 05:15:39|1|fix old cutnpaste error
+r79895|ripley|2021-01-28 04:52:06|1|update comments
+r79893|ripley|2021-01-28 01:21:41|1|update
+r79892|ripley|2021-01-28 01:21:23|1|update URL
+r79891|pd|2021-01-27 16:20:05|1|maintainer-mode changes
+r79889|kalibera|2021-01-27 07:08:20|2|Docs update (compilation vs byte-compilation).
+r79888|maechler|2021-01-27 02:07:39|3|1) translate the "in" for parse errors; [n] 2) Fix the R-de.po R-lt.po R-zh_TW.po lt.po ru.po files (errors -> where *not* installed) [n] ==> many updated translation files
+r79887|hornik|2021-01-26 23:52:58|1|Spelling.
+r79886|hornik|2021-01-26 23:46:35|1|Typo.
+r79884|ripley|2021-01-26 13:08:54|1|tweaks on C++ standards
+r79883|ripley|2021-01-25 01:40:28|1|allow suppression of missing namespace message and use it selectively
+r79882|maechler|2021-01-25 00:48:33|1|disable <DOTSXP> subsetting as it allows exposing PROMSXP
+r79881|kalibera|2021-01-25 00:38:20|2|Fix typo in docs (PR#18038).
+r79880|ripley|2021-01-25 00:21:48|1|default to C++14 if available
+r79879|ripley|2021-01-24 23:39:15|1|add comment
+r79878|pd|2021-01-24 16:20:01|1|maintainer-mode changes
+r79876|hornik|2021-01-24 08:43:33|1|Prefer giving NaN/NA when test statistic is undefined.
+r79875|hornik|2021-01-24 08:41:46|1|Tweak.
+r79873|hornik|2021-01-23 08:56:00|1|Improve URLs.
+r79872|ripley|2021-01-23 02:04:38|1|update C++ standard tests
+r79871|maechler|2021-01-23 00:39:02|1|str() now also works for "unusual" list objects where lapply() fails
+r79870|ripley|2021-01-22 23:48:23|1|rename m4/cxx_11.m4 as it is no longer just about C++11
+r79868|ripley|2021-01-22 23:26:27|1|update
+r79867|ripley|2021-01-22 22:22:37|1|update comments
+r79865|ripley|2021-01-22 21:41:34|1|update
+r79863|ripley|2021-01-22 13:39:17|1|tweaks on documenting C++ support
+r79861|ripley|2021-01-22 12:50:35|1|defer src/library changes
+r79860|ripley|2021-01-22 12:48:43|1|merge sections on C++ dialects
+r79858|ripley|2021-01-22 01:45:28|1|updates for C++ standards
+r79857|ripley|2021-01-21 22:59:44|1|tweaks
+r79855|murrell|2021-01-21 18:06:15|1|shift checking of plot(type=) to R code (as a simple fix to avoid truncating non-ASCII values in C code)
+r79853|maechler|2021-01-21 11:00:51|1|as.data.frame.list(L, row.names=NULL) now behaves as data.frame(L, *)
+r79852|ripley|2021-01-21 00:38:43|1|add comment and warning
+r79850|maechler|2021-01-20 03:59:15|1|are *BEFORE* disabling <DOTSXP>[]
+r79849|maechler|2021-01-20 01:20:13|1|forgotten part of c79848 (pre-disallowing DOTSXP)
+r79848|maechler|2021-01-19 09:44:14|1|pre-disallowing DOTSXP subsetting
+r79847|pd|2021-01-18 16:21:07|1|maintainer-mode changes
+r79846|ripley|2021-01-18 01:44:32|1|tweaks
+r79845|ripley|2021-01-18 00:16:21|1|separate detection of cairo-xlib from cairo -- Homebrew for arm64 has the second but not the first
+r79843|ripley|2021-01-17 23:20:26|1|tweak
+r79841|ripley|2021-01-17 07:57:37|1|add warning, update
+r79839|maechler|2021-01-16 09:28:39|2|mini bug fix from Ivan Krylov (R-devel list)
+r79838|hornik|2021-01-16 07:20:20|1|Spelling.
+r79836|ripley|2021-01-16 00:54:55|1|update, remove very old comments
+r79834|ripley|2021-01-15 23:45:56|1|emphasize that CPPFLAGS needs to be set also for C++
+r79833|maechler|2021-01-15 07:48:47|1|str() for "..." and "promise": just for now, as these are doomed
+r79832|ripley|2021-01-14 12:52:06|1|tweaks
+r79831|ripley|2021-01-14 07:29:53|1|tweak
+r79830|maechler|2021-01-14 06:13:59|1|all.equal() now works for <DOTSXP>
+r79829|ripley|2021-01-14 06:09:22|1|differentiate macOS default personal library directory by arch
+r79828|maechler|2021-01-14 03:11:47|1|names() now works for <DOTSXP>
+r79827|pd|2021-01-13 16:21:09|1|maintainer-mode changes
+r79825|ripley|2021-01-13 09:13:59|1|update comment
+r79822|ripley|2021-01-13 08:52:12|1|KIND=8 is not portable, let alone KIND=16
+r79821|maechler|2021-01-13 02:24:45|1|more on dot-dot-dot and environments ; "..." object possibly to change or go
+r79820|ripley|2021-01-12 22:39:40|1|add note on using AX_ macros
+r79819|pd|2021-01-12 16:20:02|1|maintainer-mode changes
+r79818|luke|2021-01-12 11:10:04|2|Use => syntax to pass pipe lhs to non-first-argument on rhs.
+r79816|maechler|2021-01-12 06:13:35|1|fix identical(<DOTSXP>, ..) -- PR#18032
+r79815|hornik|2021-01-09 14:59:51|1|Revert c79810.
+r79814|maechler|2021-01-09 09:16:36|1|fix small thinko
+r79813|hornik|2021-01-09 09:05:49|1|Do not include tags for known fields without folding.
+r79812|maechler|2021-01-08 05:43:51|1|all.equal.language(x, y) when `y` is not deparse()able
+r79811|hornik|2021-01-08 04:19:18|1|Revert accidental commit.
+r79810|hornik|2021-01-08 03:29:28|1|Also simplify in the common length zero case.
+r79809|hornik|2021-01-08 03:26:02|1|Fix PR#18027.  Thanks to <jozef.hajnala@gmail.com>.
+r79807|ripley|2021-01-08 00:27:21|1|update
+r79805|kalibera|2021-01-07 10:02:01|2|Initialize EmitEmbeddedUTF8 in Rf_initEmbeddedR (PR#18028).
+r79804|ripley|2021-01-07 08:02:27|1|mention alternative source for checkbashisms
+r79803|ripley|2021-01-07 06:30:24|1|match R-patched
+r79801|ripley|2021-01-07 00:34:23|1|more comments
+r79799|ripley|2021-01-06 00:13:07|1|update character-width tables
+r79798|ripley|2021-01-05 22:52:47|1|macOS updates
+r79797|ripley|2021-01-05 13:27:01|1|improve wording
+r79796|ripley|2021-01-05 13:22:43|1|missing period
+r79795|ripley|2021-01-05 06:58:09|1|clarify that agrep[l] do not use regexps by default
+r79794|ripley|2021-01-05 06:42:35|1|tweaks
+r79793|hornik|2021-01-05 06:35:24|1|Use internet timeout when fetching headers via package curl.
+r79792|ripley|2021-01-05 05:39:39|1|tweak
+r79791|ripley|2021-01-05 02:05:52|1|tweaks
+r79790|maechler|2021-01-05 02:01:55|1|+ \link{}s, clarification, examples -- less "#ifdef"
+r79789|lawrence|2021-01-04 14:58:16|2|add lt translations, thanks to Rimantas Žakauskas
+r79788|hornik|2021-01-04 07:53:53|1|Improve computation of the test statistic.
+r79787|ripley|2021-01-04 05:46:26|1|avoid compiler warning
+r79786|ripley|2021-01-03 23:17:39|1|tweaks, mainly documentation
+r79785|ripley|2021-01-03 22:09:14|1|some details for the CRAN M1 Mac distributions
+r79784|ripley|2021-01-03 21:52:00|1|bump date
+r79782|ripley|2021-01-03 21:20:52|1|configuring cairo should not need X11
+r79781|hornik|2021-01-03 14:06:23|1|Update comments.
+r79780|hornik|2021-01-03 14:03:44|1|Tweaks.
+r79779|hornik|2021-01-03 10:11:05|1|Re-add xtfrm.data.frame() to warn and optionally stop.
+r79778|ripley|2021-01-03 06:28:34|1|support for system wc[s]width where it exists
+r79777|ripley|2021-01-03 05:15:42|1|tweak
+r79776|ripley|2021-01-03 05:11:47|1|make replacing wc[s]width optional (but still the default)
+r79775|ripley|2021-01-03 05:02:22|1|tweak
+r79774|hornik|2021-01-03 03:29:36|1|Fix PR#18021.  Patch by Brodie Gaslam.
+r79773|hornik|2021-01-03 03:27:01|1|Fix PR#18023.  Patch by Michael Chirico <michaelchirico4@gmail.com>.
+r79772|hornik|2021-01-03 03:25:28|1|Spelling.
+r79771|ripley|2021-01-03 02:20:18|1|bump copyright date
+r79767|ripley|2021-01-02 11:14:35|1|update on M1 Mac distribution
+r79766|ripley|2021-01-02 11:02:47|3|a bit more background: src/main/rlocale_widths.h [n] change configure defaults on Solaris.
+r79765|ripley|2021-01-02 02:21:58|1|add/update some headers
+r79764|ripley|2021-01-02 00:31:54|1|tweaks
+r79763|ripley|2021-01-01 23:44:25|1|documentation for new --with-internal options
+r79762|ripley|2021-01-01 22:02:13|1|new configure options to override system character fns (or not)
+r79761|ripley|2021-01-01 21:58:35|1|avoid avoid mbtrowc on Solaris
+r79760|ripley|2021-01-01 21:34:07|1|add comment
+r79757|ripley|2021-01-01 11:35:27|1|add comment
+r79756|ripley|2021-01-01 08:12:38|1|tweak
+r79755|ripley|2021-01-01 05:50:56|1|update
+r79754|ripley|2021-01-01 03:01:39|1|tweak
+r79753|ripley|2021-01-01 02:23:00|1|update
+r79752|ripley|2021-01-01 00:31:25|1|more on uniset
+r79751|ripley|2021-01-01 00:30:47|1|more on uniset
+r79750|ripley|2021-01-01 00:22:59|1|add tool used to prepare wchar classification tables
+r79749|ripley|2021-01-01 00:20:14|1|update character classification tables
+r79747|ripley|2020-12-31 22:46:29|1|update
+r79746|ripley|2020-12-31 12:44:03|1|better names for files of tables
+r79745|ripley|2020-12-31 12:25:30|1|notes on platform dependence
+r79744|ripley|2020-12-31 01:43:29|1|small corrections
+r79743|ripley|2020-12-30 22:22:21|1|add w to name to better reflect what is being replaced
+r79742|ripley|2020-12-30 22:21:07|1|add missing entry (one of many)
+r79737|luke|2020-12-30 17:12:22|2|Separate out handling of closures from dotted pairs for more flexibility.
+r79735|hornik|2020-12-30 09:17:19|1|.C/.Fortran styles are gone.  Spotted by Ivan Krylov <krylov.r00t@gmail.com>.
+r79734|hornik|2020-12-30 09:15:49|1|Only remove recommended package revdep dummies.
+r79733|hornik|2020-12-30 09:14:04|1|old.packages() does not remove duplicates.
+r79731|ripley|2020-12-30 08:20:55|1|typo
+r79730|ripley|2020-12-30 05:43:54|1|add internal wide char tolower/toupper (not yet used)
+r79728|ripley|2020-12-30 04:34:32|1|update
+r79727|ripley|2020-12-30 00:09:04|1|add UTF-8 <-> UCS-4 string functions
+r79726|ripley|2020-12-30 00:07:30|1|simplify for macOS
+r79725|ripley|2020-12-29 05:03:42|1|enhance Ri18n_wcwidth to handle surrogate pairs
+r79724|ripley|2020-12-29 05:03:04|1|add comments of UTF-8 Windows locales
+r79723|ripley|2020-12-29 05:02:13|1|comment on macOS strangeness
+r79722|ripley|2020-12-29 01:01:13|2|add comments, amend iswgraph to comply with C99 description
+r79721|ripley|2020-12-28 22:54:58|1|add URL in comment
+r79719|ripley|2020-12-28 22:25:05|1|typo, clarify 0xFFFE:F
+r79718|ripley|2020-12-28 21:09:12|1|expand entry
+r79717|ripley|2020-12-28 11:32:23|1|update
+r79716|ripley|2020-12-28 07:47:19|1|split off rlocale_widths.h, more on sources
+r79715|ripley|2020-12-28 01:05:57|1|remove workaround for missing iswblank
+r79714|ripley|2020-12-28 00:58:07|1|more support for Latin-1 in non-Latin-1 locales
+r79713|ripley|2020-12-28 00:00:58|1|tweaks
+r79712|ripley|2020-12-27 23:05:30|1|introduce USE_RI18N_FNS
+r79711|ripley|2020-12-27 23:04:14|1|add comment
+r79710|ripley|2020-12-27 12:01:47|1|clean up
+r79709|ripley|2020-12-27 11:35:42|1|tweaks for overridding (or not) iswxxxx functions
+r79707|luke|2020-12-27 08:26:40|2|Patch for PR18020 from Suharto Anggono fixing indexing variable types.
+r79703|ripley|2020-12-26 23:30:51|1|tweak support for static tiff and png
+r79702|ripley|2020-12-26 23:02:48|1|skip M1 Mac differences
+r79701|ripley|2020-12-26 22:55:28|1|update
+r79700|ripley|2020-12-26 22:48:33|1|skip M1 Mac differences
+r79699|ripley|2020-12-26 22:27:45|1|update comments
+r79698|hornik|2020-12-26 11:58:14|1|Tweaks.
+r79697|hornik|2020-12-26 07:42:52|1|Improve source info.
+r79696|ripley|2020-12-26 06:31:31|1|comments
+r79695|ripley|2020-12-26 05:27:04|1|clarify that positions used by CP1252 are actually undefined in ISO 8859-1
+r79694|maechler|2020-12-26 04:25:59|1|all.equal.environment(*, evaluate=TRUE) __work in progress__ (see FIXME in *tests-1d.R)
+r79693|ripley|2020-12-26 04:24:16|1|add comments
+r79690|maechler|2020-12-26 02:32:09|1|+ NEWS and regr.test for PR#17868 (svn c78912)
+r79689|maechler|2020-12-26 02:16:41|1|revert duplicate
+r79688|maechler|2020-12-26 02:12:40|1|.libPaths(*, site.library=TRUE) from PR#18016
+r79687|ripley|2020-12-26 01:17:59|1|maybe Windows cannot have native chars beyond the BMP
+r79686|ripley|2020-12-26 00:37:13|1|improvements to handling Latin-1 marked inputs
+r79685|ripley|2020-12-25 03:00:39|1|use overridden isw* function in TRE regex engine
+r79684|ripley|2020-12-25 00:31:54|1|add comments
+r79683|ripley|2020-12-25 00:31:16|1|add comment
+r79682|ripley|2020-12-25 00:30:48|1|treat Solaris as using Unicode
+r79681|ripley|2020-12-25 00:29:42|1|start a new section for encoding changes (not all are committed yet)
+r79680|ripley|2020-12-25 00:22:35|1|tweak
+r79679|ripley|2020-12-24 08:52:55|1|add explanatory comments
+r79677|maechler|2020-12-24 02:52:44|1|.libPaths(*, site.library=TRUE) from PR#18016
+r79676|ripley|2020-12-24 01:17:24|1|add some comments about encodings
+r79675|ripley|2020-12-23 06:24:06|1|M1 macOS updates
+r79674|maechler|2020-12-23 03:27:40|1|fix PR#18014; thanks to Henrik Bengtsson
+r79673|deepayan|2020-12-22 22:36:23|1|bugfix: provide correct argument to custom completer
+r79672|hornik|2020-12-22 04:39:35|1|Improve CRAN incoming checks for URLs and DOIs.
+r79671|hornik|2020-12-22 04:39:01|1|Improve URLs.
+r79670|hornik|2020-12-21 21:29:14|1|Improve URLs.
+r79669|ripley|2020-12-21 20:39:15|1|add comment
+r79668|maechler|2020-12-21 11:19:14|1|show(<S4generic>) when pkg is global env
+r79667|ripley|2020-12-21 08:05:06|1|macOS updates
+r79664|ripley|2020-12-21 07:24:22|1|do not ignore marked UTF_8 strings in a SBCS
+r79663|hornik|2020-12-21 02:50:51|1|cran.revolutionanalytics.com is now cran.microsoft.com.
+r79662|hornik|2020-12-21 02:50:20|1|Spelling.
+r79660|kalibera|2020-12-21 02:06:37|2|Fix doc link (PR#18017).
+r79659|ripley|2020-12-20 23:58:01|1|macOS updates
+r79658|hornik|2020-12-20 12:02:14|1|Tweak.
+r79657|hornik|2020-12-20 12:01:46|1|Cleanup.
+r79656|hornik|2020-12-20 12:01:21|1|Improve code and docs for reverse.  By Sebastian Meyer.
+r79655|hornik|2020-12-20 11:59:41|1|Improve URLs.
+r79654|hornik|2020-12-20 11:59:08|1|Spelling.
+r79653|hornik|2020-12-20 11:57:15|1|Fix PR#18009.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79651|ripley|2020-12-20 11:19:03|1|debugging to macOS
+r79649|ripley|2020-12-19 11:20:54|1|comments on identifying Apple Silicon
+r79648|ripley|2020-12-19 01:05:41|1|warn on unpaired UTF-16 surrogates
+r79647|ripley|2020-12-18 23:21:42|1|macOS updates
+r79646|ripley|2020-12-18 11:40:55|1|avoid recent gfortran warning
+r79645|ripley|2020-12-17 11:50:06|1|could install Tcl/Tk as a foundation
+r79644|deepayan|2020-12-17 07:38:30|1|experimental hooks for user-provided extensions to completion (not yet documented)
+r79642|ripley|2020-12-16 00:31:12|1|macOS tweaks
+r79639|ripley|2020-12-15 03:20:18|1|tweaks
+r79638|ripley|2020-12-15 03:03:32|1|go back to system mbrtowc until we have corrected our handling of surrogates
+r79636|ripley|2020-12-14 23:46:03|1|missing )
+r79635|ripley|2020-12-14 23:45:45|1|add note on macOS oddity
+r79630|luke|2020-12-14 09:56:29|2|Update for ?pipeOp from Kevin Ushey.
+r79629|maechler|2020-12-14 09:54:09|1|news for r79626
+r79626|maechler|2020-12-14 07:00:48|1|identical(<dotsxp>)
+r79625|ripley|2020-12-14 02:33:23|1|tweaks for USE_FC_TO_LINK
+r79624|ripley|2020-12-14 01:34:35|1|mention -arch
+r79623|hornik|2020-12-13 03:02:34|2|For now, when given a data frame, have xtfrm.default() warn and skip [n] checking its value for correct length.
+r79622|ripley|2020-12-12 11:33:40|1|avoid gcc 10 warning
+r79621|ripley|2020-12-12 08:36:21|1|document parser change for \U
+r79620|ripley|2020-12-11 21:28:47|1|report bad \U value
+r79619|pd|2020-12-11 16:20:01|1|maintainer-mode changes
+r79618|ripley|2020-12-11 11:09:41|1|typo
+r79617|ripley|2020-12-11 11:09:16|1|improve old comment
+r79616|ripley|2020-12-11 08:51:18|1|explanatory comments on the use of __STDC_ISO_10646__
+r79615|maechler|2020-12-11 08:42:58|1|another tweak for show(<S4 generic>)
+r79613|ripley|2020-12-11 07:42:19|1|update comments
+r79612|ripley|2020-12-11 06:02:21|4|Allow only \Uxxxxxxxx escapes valid for UTF-8 [n] Ouptput with only 6 hex digits [n] Avoid system mbrtowc (Solaris one is wrong for upper Unicode points).
+r79610|ripley|2020-12-11 04:11:15|1|tweak
+r79609|ripley|2020-12-11 02:17:49|1|tweaks to c79608
+r79608|ripley|2020-12-11 02:11:38|1|better handling of parsing surrogate pairs on Solaris etc, document what is supposed to happen
+r79606|hornik|2020-12-10 08:35:38|1|Fix PR#17995.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79605|ripley|2020-12-10 08:02:33|1|avoid relying on parser for invalid UTF-8 input
+r79604|ripley|2020-12-10 02:28:44|1|tweaks for checking on Solaris (gcc, 32-bit)
+r79602|ripley|2020-12-10 00:24:58|1|follow earlier practice and strip docstrip preamble.  Document update
+r79600|ripley|2020-12-09 05:48:10|1|update from AZ
+r79599|ripley|2020-12-09 05:03:06|1|document r79597
+r79598|pd|2020-12-09 03:49:47|1|NA colname and check.names=FALSE, PR18007
+r79597|ripley|2020-12-08 21:21:37|1|warn when attempting fallback to Xlib
+r79595|kalibera|2020-12-08 07:31:43|3|Windows installer: fix launcher icon installation without administrative [n] permissions.  Allow override to user-only installation.
+r79594|kalibera|2020-12-08 05:17:38|2|Docs update (from Sebastian Meyer).
+r79592|ripley|2020-12-08 03:29:32|1|report which device is unavailable
+r79589|ripley|2020-12-08 02:26:07|1|add early error if cairo is not supported
+r79586|ripley|2020-12-07 11:30:43|1|macOS tweaks
+r79585|maechler|2020-12-07 09:11:14|1|use `check.environment = <T/F>` (singular)
+r79584|maechler|2020-12-07 09:08:07|1|cosmetic, notably deparse1(<large f>)
+r79583|maechler|2020-12-07 09:06:38|1|p.adjust(<empty>, n=0); PR#18002
+r79580|murrell|2020-12-06 14:37:00|1|fix documentation for graphics::polypath() - reported by Robert Hijmans
+r79578|luke|2020-12-06 13:59:31|2|Added ~ and @ to special syntax list.
+r79577|luke|2020-12-06 13:54:41|2|Changed section name and title.
+r79574|luke|2020-12-06 10:06:33|2|Typo fix.
+r79573|hornik|2020-12-06 07:38:51|1|Tweak for c76955.
+r79572|hornik|2020-12-06 05:22:30|1|Have xtfrm.default() check its value for correct length and type.
+r79571|hornik|2020-12-06 05:21:33|1|Drop xtfrm.data.frame() added in c79513.
+r79570|hornik|2020-12-06 05:18:26|1|Improve output.
+r79569|ripley|2020-12-04 23:26:46|1|tweaks
+r79566|ripley|2020-12-04 22:48:03|1|allow for macOS > 11 next year
+r79565|luke|2020-12-04 18:20:17|2|Typo fix.
+r79564|ripley|2020-12-04 07:44:30|1|it seems 11.1 is still Big Sur
+r79562|ripley|2020-12-04 07:36:47|1|update now the majority are on Catalina/Big Sur
+r79559|ripley|2020-12-04 05:04:52|1|update
+r79557|ripley|2020-12-04 04:43:59|1|macOS updates
+r79556|ripley|2020-12-04 04:30:27|1|make check failed with previous version
+r79555|maechler|2020-12-04 03:13:06|1|new all.equal.function() checks environment(.)
+r79554|pd|2020-12-03 16:20:00|1|maintainer-mode changes
+r79553|luke|2020-12-03 14:59:31|2|Added native pipe and function shorthand syntax.
+r79546|ripley|2020-12-03 07:34:06|1|tweaks for macOS
+r79545|kalibera|2020-12-03 01:45:52|2|Comment.
+r79544|luke|2020-12-02 17:14:08|2|Clear out PR_CODE as well during promise clearing.
+r79543|luke|2020-12-02 16:34:35|2|Make sure target is on the handler stack before unwinding.
+r79542|luke|2020-12-02 15:38:48|2|Drop rference counts when unwinding handler stack in endcontext.
+r79541|luke|2020-12-02 13:36:03|2|Improvements to calling handlers registered with addTaskCallback().
+r79539|ripley|2020-12-02 12:12:39|1|macOS updates
+r79538|luke|2020-12-02 09:34:22|2|Added a comment to eventually clear the environment in callR1.
+r79537|hornik|2020-12-02 06:13:03|1|Optionally do DOI checks in parallel too.
+r79536|hornik|2020-12-02 05:07:57|1|Improve URLs.
+r79535|hornik|2020-12-02 05:07:37|1|Spelling.
+r79532|hornik|2020-12-01 07:09:46|1|Fix PR#17831.  With lots of help from Luke.
+r79531|hornik|2020-12-01 07:03:16|1|Fix PR#17991.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79530|ripley|2020-12-01 02:19:49|1|clean up clang warnings
+r79529|luke|2020-11-30 13:06:08|2|Added R_NewEnv as a C versin of new.env to the API.
+r79528|luke|2020-11-30 10:21:52|2|Avoid creating and discarding a vector of length 1 in do_pos2env.
+r79527|maechler|2020-11-30 07:58:49|1|show(<hidden S4 generic>) now mentions `:::`
+r79525|ripley|2020-11-29 02:20:42|1|macOS updates
+r79524|ripley|2020-11-29 02:08:01|1|typos, English-language tweaks
+r79522|hornik|2020-11-27 09:11:30|1|Fix PR#17662.
+r79521|hornik|2020-11-27 09:07:19|1|Tweak for c79513.
+r79519|ripley|2020-11-27 02:32:32|1|tweak for --disable-long-double
+r79517|ripley|2020-11-27 01:40:13|1|do not search for other BLASes if one is given, more info on search
+r79516|ripley|2020-11-27 01:06:44|1|reference R-devel manuals online from R-devel, R-patched everywhere else
+r79514|ripley|2020-11-26 23:20:34|1|tweaks
+r79513|hornik|2020-11-26 09:36:03|1|Fix PR#17985 by adding xtfrm.data.frame().
+r79512|hornik|2020-11-26 07:44:52|1|Optionally do CRAN incoming URL checks in parallel.
+r79511|hornik|2020-11-26 07:34:28|1|Tweak for c79479.
+r79510|hornik|2020-11-26 07:33:56|1|Updated.
+r79509|hornik|2020-11-26 06:47:23|1|Fix PR#17987.  Patch by  Henrik Bengtsson <henrikb@braju.com>.
+r79507|maechler|2020-11-26 03:45:24|1|mention gc.time()
+r79506|ripley|2020-11-26 03:06:36|1|tweak when .Machine has longdouble.*
+r79505|kalibera|2020-11-25 10:41:26|3|Speed up match() for mixed-encoding use (PR#17965). With [n] Kurt Hornik.
+r79504|luke|2020-11-25 09:41:41|2|Check R_MaxVSize when expanding R_VSize with GC suspended.
+r79503|hornik|2020-11-25 08:52:22|1|Fix PR#17940.  Patch by Jim Hester <james.f.hester@gmail.com>.
+r79502|hornik|2020-11-25 04:35:04|1|Tweaks.
+r79501|hornik|2020-11-25 04:34:45|1|Tweak.
+r79500|hornik|2020-11-25 04:29:08|1|Robustify.  Suggested by Jan Gorecki <j.gorecki@wit.edu.pl>.
+r79498|ripley|2020-11-25 03:08:05|1|another instance of [] for ()
+r79497|maechler|2020-11-25 01:41:04|1|tweak: longdouble also ok if of length 12
+r79494|ripley|2020-11-24 21:30:46|1|updates on long doubles
+r79492|ripley|2020-11-24 20:23:49|1|updates
+r79491|pd|2020-11-24 16:21:03|1|maintainer-mode changes
+r79490|maechler|2020-11-24 12:56:10|1|tweak for "no long-double"
+r79489|ripley|2020-11-24 09:27:03|1|add comment
+r79488|ripley|2020-11-24 08:57:22|1|the zlib interface no longer uses mmap
+r79487|maechler|2020-11-24 08:49:55|1|pnorm(x, log.p=TRUE) with slightly extended range
+r79486|ripley|2020-11-24 07:30:33|1|tweaks
+r79484|hornik|2020-11-24 06:10:49|1|Tweak.
+r79483|ripley|2020-11-24 03:50:45|1|add a comment on matherr
+r79482|ripley|2020-11-24 03:22:03|1|set JAVA_HOME
+r79480|ripley|2020-11-24 01:22:55|1|avoid trouble with -Werror=implicit-function-declaration
+r79479|hornik|2020-11-23 22:41:10|2|Try fixing PR#17964 by having data set 'esoph' provide the correct numbers [n] of controls.
+r79478|hornik|2020-11-23 22:36:18|1|Fix PR#17981.  Patch by Kevin Ushey <kevinushey@gmail.com>.
+r79477|hornik|2020-11-23 22:34:41|1|Fix PR#17973.  Patch by Kevin Ushey <kevinushey@gmail.com>.
+r79476|hornik|2020-11-23 22:32:29|1|Fix PR#17986.
+r79475|ripley|2020-11-23 21:48:21|1|add some declarations for -Werror=implicit-function-declaration
+r79474|luke|2020-11-23 12:45:12|3|get(), exists(), and get0() now signal an error if the first argument [n] has length > 1. Suggested by Antoine Fabri on R-devel.
+r79472|hornik|2020-11-23 06:43:33|1|cran.revolutionanalytics.com is no longer ok.
+r79471|ripley|2020-11-23 06:12:56|1|typo
+r79470|ripley|2020-11-23 05:51:48|1|mention Azul Java
+r79466|ripley|2020-11-23 05:07:33|1|avoid check difference seen on macOS with Accelerate
+r79465|ripley|2020-11-23 05:06:48|1|macOS often needs -Wno-implicit-function-declaration
+r79464|luke|2020-11-22 16:56:18|2|Allow a symbol as the first argument to exists, get, and get0.
+r79463|ripley|2020-11-22 07:54:36|1|tweak
+r79462|maechler|2020-11-22 06:50:06|1|explain a bit more, following PR#17962
+r79461|ripley|2020-11-22 05:15:42|1|more messages when pkg-config is detecting bitmap graphics libs
+r79458|ripley|2020-11-22 03:56:52|1|tweaks
+r79457|ripley|2020-11-22 02:19:04|1|tweaks
+r79455|ripley|2020-11-22 01:55:54|1|updates on macOS
+r79454|maechler|2020-11-21 11:48:40|1|tweak c79391: nls(*, trace=.) showing less digits of conv() criterion; use R_DIFF_IGNORE_(BEGIN/END)
+r79453|pd|2020-11-21 10:49:56|1|use NA_integer_ in unsplit()
+r79452|ripley|2020-11-21 02:44:20|1|skip different output on arm64 macOS
+r79450|ripley|2020-11-20 02:25:57|1|macOS updates
+r79448|luke|2020-11-18 13:44:40|2|Fix for PR17975 from Gabe Becker.
+r79446|luke|2020-11-18 12:42:28|2|Bump REFCNT on tag and prot when creating external pointers.
+r79445|hornik|2020-11-18 09:31:02|1|Spelling.
+r79444|maechler|2020-11-18 02:43:57|1|sync w/ R-patched port
+r79440|hornik|2020-11-18 01:53:51|1|Fix PR#17969.  By Suharto Anggono.
+r79439|hornik|2020-11-17 10:56:28|1|Tweak.
+r79438|maechler|2020-11-17 09:13:24|1|add .fixupGFortran* to .windows_only_proto_objects; belongs to c79430
+r79436|ripley|2020-11-17 08:47:46|1|more on macOS on ARM
+r79435|hornik|2020-11-17 02:35:08|1|Have getS3method() insist on character strings for generic and class.
+r79434|luke|2020-11-16 11:02:06|2|Allow a symbol as the first argument to exists, get, and get0.
+r79433|kalibera|2020-11-16 09:15:11|2|Avoid unnecessary copy and support custom handlers in (related to 79429).
+r79430|maechler|2020-11-14 06:10:16|1|fix docu `x`-argument + .gt()/.gtn() for S3 & S4
+r79429|kalibera|2020-11-13 11:01:44|2|Remove path segments in help processing.
+r79427|ripley|2020-11-13 10:59:51|1|update for macOS Big Sur
+r79426|kalibera|2020-11-13 03:28:21|2|Added rules on protecting objects.
+r79425|kalibera|2020-11-13 01:13:27|2|R-Admin: update note about floating-point modes on different platforms.
+r79423|maechler|2020-11-12 09:33:24|2|more efficient fix for iconvlist()
+r79422|maechler|2020-11-12 09:16:33|2|better fix for iconvlist()
+r79421|maechler|2020-11-12 09:02:15|1|fix iconvlist() on MUSL, PR#17970
+r79419|ripley|2020-11-12 08:42:33|1|update from savannah
+r79418|maechler|2020-11-12 08:16:01|2|allow the `user` to be empty in shell setup call; [n] suggested on R-devel by Henrik Bengtsson, Nov.7
+r79417|maechler|2020-11-12 08:14:51|1|need doc/NEWS.rds for news() example; put R.1 last
+r79416|luke|2020-11-12 07:43:11|2|Fixed incorrect variable name.
+r79415|kalibera|2020-11-12 01:11:16|2|Fix warning message (PR#17971, from Lionel Henry).
+r79414|luke|2020-11-11 17:02:42|3|:: and ::: are now SPECIALSXP primitives. [n] Adapted from a patch provided by Lionel Henry.
+r79413|maechler|2020-11-11 00:35:45|1|textConnection(.., name=*)
+r79412|kalibera|2020-11-10 06:17:42|2|Rename _R_INSTALL_LIBSONLY_FORCE_DEPENDS_IMPORTS_ to _R_INSTALL_LIBS_ONLY_FORCE_DEPENDS_IMPORTS_
+r79411|murrell|2020-11-09 14:23:11|1|update NEWS for R_GE_version 14
+r79410|kalibera|2020-11-09 11:28:23|3|Environment variable to allow installing libraries of a package without [n] imports/depends dependencies.
+r79409|murrell|2020-11-08 18:25:31|1|add dev->deviceClip (and bump R_GE_version to 14)
+r79408|ripley|2020-11-08 03:06:46|1|bit more on macOS 11, remove outdated references to OS X
+r79406|ripley|2020-11-08 02:49:39|1|expand on timeouts
+r79403|ripley|2020-11-06 05:43:16|1|clarify this is for non-default argument
+r79402|maechler|2020-11-06 01:31:13|1|update wrt `initial()` needing "..." (c79400)
+r79401|hornik|2020-11-04 23:08:23|1|Add URL for reference.
+r79400|maechler|2020-11-04 03:18:56|1|nls(): pass {trace, control} to getInitial(), notably for selfStart models; tweak trace()
+r79399|kalibera|2020-11-03 06:58:14|3|Fix tar tests to work with external tar. Test also internal tar when [n] external is available.
+r79398|kalibera|2020-11-03 05:53:09|4|Modify trio to print U+xxxx escapes for wide characters not representable in [n] current encoding. Impacts printing using %ls. (PR#17958)
+r79397|maechler|2020-11-03 00:59:10|1|cosmetics (lying around for months)
+r79396|maechler|2020-11-02 12:57:18|1|tweaks, update for c79391
+r79395|luke|2020-11-02 10:40:59|2|bquote() can now spice expression vectors with attributes (PR17869).
+r79394|kalibera|2020-11-02 10:04:24|3|Temporary fix for tests for stricter (possibly too strict) all.equal.POSIXt, [n] so that they pass when TZ is set (code from Sebastian Meyer with my comments).
+r79392|hornik|2020-11-01 23:00:05|1|ftp.ussg.iu.edu is back to ok.
+r79391|maechler|2020-11-01 07:07:37|1|new `eps` & `central`  parameter to numDeriv(); nls.control(*, nDcentral=); nls(*,trace) tweak
+r79390|hornik|2020-10-31 01:11:54|1|Tweak.
+r79388|ripley|2020-10-30 23:56:18|2|stress --cppflags is for front-ends (not packages)
+r79386|luke|2020-10-29 10:28:58|2|Added missing PROTECT/UNPROTECT in  ALTREP_UNSERIALIZE_CLASS.
+r79385|ripley|2020-10-29 06:21:13|1|markup
+r79384|ripley|2020-10-29 01:41:08|1|avoid deferred warnings
+r79383|maechler|2020-10-29 01:21:31|1|I() now uses the regular `class(.) <-`, notably after c79367
+r79382|hornik|2020-10-28 11:31:56|1|Only use --encoding=UTF-8  for checking examples when -Ex.R file is not all ASCII.
+r79381|hornik|2020-10-28 11:30:19|1|Updated.
+r79380|hornik|2020-10-28 01:08:25|1|Example '-Ex.R' files are always in UTF-8.
+r79377|maechler|2020-10-27 08:08:15|1|x <-> y , fixing 20 yr old "thinko"
+r79376|kalibera|2020-10-26 11:10:55|2|Show the format in sprintf warning about unused arguments.
+r79375|maechler|2020-10-26 04:39:45|1|do_unsetS4(): act before warning()
+r79373|ripley|2020-10-26 03:22:21|1|revert check for /bin/bash
+r79372|hornik|2020-10-26 01:44:40|1|ftp.ussg.iu.edu is no longer ok.
+r79371|hornik|2020-10-26 01:44:01|1|Updated.
+r79369|ripley|2020-10-26 01:09:41|2|/usr/bin/env bash is also not portable
+r79368|ripley|2020-10-26 00:36:40|1|add POSIX reference
+r79367|luke|2020-10-24 12:51:47|2|class<- now duplicates in a non-assignment context if the target has one reference.
+r79366|maechler|2020-10-23 03:18:17|1|re-activate nls() improvements from r79352; plus analogue in profiler.nls()
+r79365|maechler|2020-10-23 00:35:19|1|fix PR#17956 typo (+ drop trailing space)
+r79363|ripley|2020-10-23 00:11:01|1|update
+r79361|ripley|2020-10-22 22:43:11|1|update to 2020d
+r79360|maechler|2020-10-21 15:17:42|1|revert most nls() improvements from r79352
+r79359|maechler|2020-10-21 02:49:34|1|sync from R-patched
+r79357|maechler|2020-10-21 02:44:07|1|fix unlist(<pairlist+list>, recursive=FALSE); PR#17950
+r79356|ripley|2020-10-20 14:14:27|1|domain = NA in wrong place
+r79355|kalibera|2020-10-20 09:30:22|2|Warn on unused arguments by format in sprintf.
+r79354|kalibera|2020-10-20 09:29:35|2|Docs update - numeric references in sprintf from POSIX.
+r79353|maechler|2020-10-20 09:24:29|1|Summary.data.frame() and Math.data.frame() now do accept logical columns as "numeric-alike"
+r79352|maechler|2020-10-20 07:48:59|1|nls() gets `scaleOffset` option to allow "zero-residual" fits; additionally replace all `assign(..) by faster `<<-`
+r79351|kalibera|2020-10-20 07:31:02|2|Docs update - 1st element of tzone attribute.
+r79350|hornik|2020-10-20 00:02:22|1|Add ftpmirror1.infania.net.
+r79348|ripley|2020-10-19 08:43:35|1|update to 2020c
+r79347|kalibera|2020-10-19 04:01:37|3|Drop unused .Rbuildignore code from R CMD check (from Sebastian Meyer, [n] related to PR#7379).
+r79346|maechler|2020-10-17 12:42:17|1|qnorm(<very large negative>, log.p=TRUE) is no longer very wrong
+r79345|kalibera|2020-10-16 02:20:18|2|Amend 79342, delete temporary file which holds R expressions to run.
+r79344|hornik|2020-10-16 00:52:38|1|Updated.
+r79343|hornik|2020-10-16 00:52:28|1|Spelling.
+r79342|kalibera|2020-10-15 06:24:29|3|Use TMPDIR when creating temporary file for expressions given via -e to [n] R/Rscript. Reduce code duplication wrt to isDir (PR#17925).
+r79341|kalibera|2020-10-15 03:14:58|3|Avoid string truncation in Win_selectlist/select.list() on Windows [n] (PR#17817).
+r79340|kalibera|2020-10-15 01:42:23|2|Minor docs update (identical() reference to isTRUE(), PR#17948).
+r79339|kalibera|2020-10-15 00:29:08|2|Revert 79332.
+r79338|hornik|2020-10-14 08:13:42|1|Tweak.
+r79337|kalibera|2020-10-14 04:16:35|2|Disable runfast on ARM.
+r79336|maechler|2020-10-13 01:44:27|1|sync with ports to R-patched
+r79333|hornik|2020-10-12 09:22:43|1|Fix PR#17922.  By Vincent Goulet.
+r79332|kalibera|2020-10-12 09:07:34|2|Allow treating NA and NaN the same in identical() (experimental).
+r79330|hornik|2020-10-12 08:08:45|1|Add mirror.clientvps.com.
+r79329|ripley|2020-10-12 01:01:35|1|add TLS arg to curlGetHeaders
+r79328|hornik|2020-10-12 00:24:55|1|Updated.
+r79326|ripley|2020-10-11 09:58:35|1|missing )src/library/graphics/man/zAxis.Rd
+r79325|ripley|2020-10-11 08:18:28|1|ship the more modern zone1970.tab
+r79324|kalibera|2020-10-11 01:59:09|2|Ensure same test output in all time zones.
+r79317|luke|2020-10-09 08:33:56|2|Add defensive PROTECT/UNPROTECT around ALTREP_COERCE call.
+r79316|luke|2020-10-08 15:12:03|2|Copy over attributes when coerce result is produced by ALTREP_COERCE.
+r79314|ripley|2020-10-08 13:11:11|1|update for 2020b
+r79313|hornik|2020-10-08 10:37:50|1|Add mirror.dogado.de.
+r79312|kalibera|2020-10-08 06:03:31|2|Typo.
+r79311|pd|2020-10-07 16:20:07|1|maintainer-mode changes
+r79309|hornik|2020-10-07 10:37:54|1|Update URLs.
+r79308|kalibera|2020-10-07 09:55:29|2|Protect fix, reentrancy fix (PR#17923).
+r79307|kalibera|2020-10-07 03:55:46|2|More truncation fixes from Brodie Gaslam.
+r79305|maechler|2020-10-07 01:56:33|1|.traceback(<n>) again keeps "srcref"
+r79304|pd|2020-10-06 16:20:08|1|maintainer-mode changes
+r79302|ripley|2020-10-06 08:09:33|1|corrected update
+r79301|kalibera|2020-10-06 04:55:31|2|Typo (PR#17941).
+r79300|ripley|2020-10-06 03:03:50|1|revert r79240 now Rdpack had been updates
+r79299|maechler|2020-10-06 00:28:45|2|+ \link{Logic}
+r79297|maechler|2020-10-05 09:54:54|1|1-letter typo, PR#17939
+r79296|maechler|2020-10-05 07:46:58|1|axis() ticks / axisTicks() in log-scale (case 1) are now more symmetric inside the usr range.
+r79295|maechler|2020-10-05 06:13:23|1|x[[2^31]] <- v  now works, PR#17330
+r79294|kalibera|2020-10-05 02:52:23|2|Quote path name (PR#17937, from Manuel Francisco).
+r79293|maechler|2020-10-05 02:09:37|1|fix (~ NA)[-1]; now return formula(NULL) for (~ x)[FALSE]
+r79292|luke|2020-10-04 12:42:19|3|Improved error messages for default ALTREP methods contributed by [n] Gabe Becker in PR17846.
+r79289|ripley|2020-10-02 01:42:38|1|wchar_t is Unicode on Solaris
+r79288|maechler|2020-10-02 01:15:32|1|fix (~ NULL)[1]  etc; PR#17935
+r79287|lawrence|2020-10-01 13:38:45|2|as.POSIXct() handles 'tz' correctly when 'x' is a logical with all NAs
+r79284|ripley|2020-09-30 23:54:03|1|copy-and-paste error
+r79283|hornik|2020-09-30 13:32:48|1|Tweaks for c79220.
+r79282|hornik|2020-09-30 13:31:55|1|Improve URLs.
+r79281|hornik|2020-09-30 13:31:39|1|Spelling.
+r79280|ripley|2020-09-30 07:57:12|1|report time for Rd files check, which can be long
+r79279|pd|2020-09-29 15:04:03|1|fixup section header in NEWS
+r79275|luke|2020-09-29 09:31:02|2|Enforce documented limit on print.gap; fixes PR17932.
+r79273|maechler|2020-09-29 00:55:44|1|cut'n'paste typo in \name{}
+r79271|ripley|2020-09-28 21:39:45|1|more details on compression levels
+r79269|ripley|2020-09-28 20:50:45|1|add link to details of compression
+r79267|ripley|2020-09-27 22:50:13|1|bump BioC version to 3.12
+r79265|ripley|2020-09-27 03:27:00|1|update, drop most comments about C++98
+r79263|ripley|2020-09-26 07:04:42|1|doc updates
+r79262|ripley|2020-09-25 10:21:44|1|pacify more gcc trunk warnings
+r79261|ripley|2020-09-25 09:54:18|1|more likely intention
+r79260|ripley|2020-09-25 09:52:48|1|pacify gcc trunk warnings
+r79259|hornik|2020-09-25 09:39:58|1|Improve URLs and DOIs.
+r79257|ripley|2020-09-25 07:36:41|1|Aarch64 seems to give NaN rather than NA more frequently than other platforms
+r79255|ripley|2020-09-25 03:00:15|1|allow the timeout option default to be set by an env variable
+r79254|ripley|2020-09-25 01:38:07|1|report current timeout if reached
+r79253|hornik|2020-09-24 08:01:47|1|Fix for PR#17588 by Lionel Henry.
+r79251|luke|2020-09-24 07:07:51|2|Add missing PROTECT to fix PR17926.
+r79250|kalibera|2020-09-24 06:21:39|3|Give child process run via pipe on Windows some time to finish gracefully [n] when closing the connection (reported by Brodie Gaslam).
+r79248|kalibera|2020-09-23 10:44:06|2|More truncation fixes from Brodie Gaslam.
+r79247|hornik|2020-09-23 10:37:58|1|Improve propagating R_LIBS.  By Sebastian Meyer <seb.meyer@fau.de>.
+r79246|pd|2020-09-23 10:32:49|1|fixes for PR#17879 ported to 4.0.2 Patched
+r79244|kalibera|2020-09-23 09:20:02|2|Fall back to getRUser (R_USER may not be set yet).
+r79243|kalibera|2020-09-23 06:18:33|2|Process user .Renviron on Windows (PR#17919).
+r79241|pd|2020-09-23 03:06:37|1|rephrase 17879; move 16100 to 4.0.2 patched
+r79240|ripley|2020-09-23 03:02:46|1|do not report indirect revdeps of bibtex until Rdpack is updated
+r79239|maechler|2020-09-23 01:39:37|2|1 letter typo
+r79238|maechler|2020-09-23 01:11:20|1|sync with R 4.0.2 patched
+r79234|luke|2020-09-21 11:43:35|2|Fix for PR17838 from Lionel Henry.
+r79232|maechler|2020-09-21 07:31:29|1|update
+r79230|maechler|2020-09-21 06:44:10|1|+ \link{setTimeLimit}
+r79229|maechler|2020-09-21 06:43:25|1|add dt2df() & d2mat() utilities to examples
+r79228|hornik|2020-09-20 23:29:03|1|cran.seoul.go.kr is back to ok.
+r79227|hornik|2020-09-20 22:57:29|1|Updated.
+r79223|maechler|2020-09-17 05:12:22|1|tar() with file; PR#16716 patch from Sebastian
+r79222|kalibera|2020-09-17 00:20:35|2|Add missing parens to improve overflow check. From Brodie Gaslam.
+r79221|maechler|2020-09-16 15:07:51|1|all.equal.factor() now reports NA differences (again)
+r79220|hornik|2020-09-16 09:30:03|1|RdMacros may already be needed at install time.
+r79219|hornik|2020-09-16 07:08:15|1|Warn rather than note using pkg::fun with unavailable fun.
+r79218|kalibera|2020-09-16 05:52:00|3|Allow to build Windows installer with only 64-bit binaries.  Fix build with [n] only 32-bit binaries.
+r79217|kalibera|2020-09-16 05:28:09|3|Remove old comment (overflow is prevented since 35139). Identified by Brodie [n] Gaslam.
+r79216|kalibera|2020-09-16 04:28:25|2|More truncation fixes from Brodie Gaslam.
+r79215|maechler|2020-09-15 12:06:02|2|fix from _R_CHECK_LENGTH_1_*
+r79214|kalibera|2020-09-15 08:48:06|3|Support building of binary packages during parallel installation via [n] install.packages.
+r79212|kalibera|2020-09-15 02:08:33|2|NEWS entry for 78676, 78754.
+r79211|kalibera|2020-09-15 01:53:48|2|NEWS entry for 79169, 79173.
+r79207|kalibera|2020-09-15 01:31:31|2|NEWS entry for 79117.
+r79205|kalibera|2020-09-15 01:11:14|2|Port 79055 to R-patched.
+r79203|maechler|2020-09-14 08:35:56|1|trivial changes (mostly comments)
+r79202|maechler|2020-09-14 08:26:50|1|tweak (ux == 0 would lead to inf.loop below)
+r79201|kalibera|2020-09-14 06:09:26|3|Disable SEH in setjmp on Windows as a workaround against recently observed [n] crashes/lockups on Windows 10. Experimental.
+r79200|ripley|2020-09-14 06:01:13|1|improvements to how pkg-config is looked for
+r79199|ripley|2020-09-14 04:09:40|1|document most of the commands which can be set
+r79197|ripley|2020-09-14 03:09:11|1|configure warnings
+r79196|ripley|2020-09-14 03:08:16|1|reinforce warning on timeout
+r79195|maechler|2020-09-13 07:47:56|1|amend c79180
+r79194|hornik|2020-09-13 01:35:46|1|Tweaks.
+r79192|ripley|2020-09-12 02:12:21|1|Internet Explorer is old hat
+r79190|ripley|2020-09-12 01:51:38|1|clarify not for type="both"
+r79189|maechler|2020-09-11 23:48:45|1|more \link{long vectors}
+r79188|luke|2020-09-11 10:23:16|2|Use trioremap and %lld on Windows for inspecting large compact sequence limits.
+r79186|ripley|2020-09-11 08:56:48|1|warn on filenames like TCIU used
+r79185|maechler|2020-09-11 01:03:43|1|isS3stdGeneric(f) now works after trace(f)
+r79183|ripley|2020-09-10 19:24:00|1|for safety, add a default
+r79182|ripley|2020-09-10 08:41:46|1|report warnings seen in package duckdb
+r79181|kalibera|2020-09-10 08:14:06|3|Improvements for 79163 (do not include newline when truncating text, [n] comments, type compatibility). From Brodie Gaslam.
+r79180|maechler|2020-09-10 07:26:38|1|quantile(x, pr) border cases: x "ordered" or "Date"; NA in pr
+r79178|ripley|2020-09-10 00:31:36|1|reword, typo
+r79177|hornik|2020-09-10 00:02:26|1|Fix PR#17335.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79176|hornik|2020-09-09 22:55:09|1|Drop cran.mtu.edu.
+r79175|ripley|2020-09-09 22:43:57|1|tweak
+r79174|hornik|2020-09-09 10:47:34|2|Add 'check.tzone' argument to all.equal.POSIXt(). [n] By Sebastian Meyer <seb.meyer@fau.de>.
+r79173|luke|2020-09-09 08:12:17|2|Added casts in compact_intseq_Dataptr.
+r79171|ripley|2020-09-09 04:06:29|1|warn more on C++ headers
+r79170|kalibera|2020-09-09 02:03:21|2|Restrict test to at least 64-bit builds.
+r79169|kalibera|2020-09-09 01:51:54|2|Fix integer overflow.
+r79168|hornik|2020-09-09 00:10:50|1|Docs for c79112.
+r79166|ripley|2020-09-08 23:08:20|1|enhance messages from install.packages()
+r79165|ripley|2020-09-08 11:50:18|1|suppress compiler warnings
+r79163|kalibera|2020-09-08 08:21:24|2|More truncation fixes, comments fix. From Brodie Gaslam.
+r79161|maechler|2020-09-08 08:03:00|1|provide packBits(*, type="double") [as inverse of numToBits()]
+r79160|maechler|2020-09-08 07:19:33|1|capture.output(): replace NSE by looping w/ ...length() and ..elt()
+r79159|kalibera|2020-09-08 06:54:10|3|Prevent creation of partial characters in multi-byte string truncation. Fix error handling with [n] vsnprintf. From Brodie Gaslam.
+r79158|ripley|2020-09-08 04:00:55|1|first pass at revising messages when packages are not found
+r79156|maechler|2020-09-08 03:38:26|1|fix .Internal(inspect(<long sequence>))
+r79155|kalibera|2020-09-08 00:49:42|2|Fix 79149 for computed ids.
+r79154|murrell|2020-09-07 19:08:53|1|a couple more palettes (approximating palettes from 'scico') for hcl.colors() - patch from Achim Zeileis
+r79153|kalibera|2020-09-07 09:04:59|2|Fix 79149 for consistency.
+r79152|maechler|2020-09-07 08:45:08|1|fix PR#17913: numToBits(n0) was zapping n0
+r79150|ripley|2020-09-07 05:20:36|1|avoid UTF-8 quotes
+r79149|kalibera|2020-09-07 04:50:08|3|Ignore invalid expression of ids in reshape to be bug-compatible with [n] previous version (amends 79120).
+r79147|ripley|2020-09-07 00:21:42|1|avoid texinfo.tex restriction on nested footnotes
+r79145|ripley|2020-09-06 22:40:20|1|expand comment
+r79144|hornik|2020-09-06 22:22:26|1|Correction.  By Duncan Murdoch <murdoch.duncan@gmail.com>.
+r79142|ripley|2020-09-06 22:07:33|1|notes on why packages might not be found
+r79140|ripley|2020-09-06 07:21:29|1|updates
+r79139|ripley|2020-09-06 07:20:57|1|new section
+r79138|hornik|2020-09-06 05:17:13|1|Add mirror.truenetwork.ru.
+r79136|ripley|2020-09-04 12:44:02|1|move towards macOS 11
+r79135|ripley|2020-09-04 12:28:36|1|test for presence of Tktable
+r79133|ripley|2020-09-04 08:40:54|1|cleaner way to avoid sub-second timestamps
+r79131|maechler|2020-09-04 06:52:19|1|...elt() preserving visibility
+r79130|maechler|2020-09-04 06:33:02|1|amend c79095: c() does *not* drop an initial NULL for back compatibility
+r79128|ripley|2020-09-04 04:11:19|1|avoid sub-second timestamps
+r79127|ripley|2020-09-04 04:10:00|1|comments from compiling with the ODS compiler
+r79126|lawrence|2020-09-03 10:25:38|2|Updated Russian translations from Alexey Shipunov
+r79125|kalibera|2020-09-03 10:12:32|3|Prevent memory corruption when truncating error messages in some non-English [n] languages (reported by Brodie Gaslam).
+r79124|kalibera|2020-09-03 06:48:00|2|Comments.
+r79123|kalibera|2020-09-03 06:36:54|3|Improve handling of multi-byte characters in truncation of error messages [n] and warnings. From Brodie Gaslam.
+r79122|kalibera|2020-09-03 04:21:06|2|Fix argument name in error message (PR#17908).
+r79121|kalibera|2020-09-03 03:54:52|2|Prevent out of bounds access.
+r79120|kalibera|2020-09-03 03:19:37|3|Improve error message in reshape for duplicate values in idvar (PR#17564), [n] with Sebastian Meyer.
+r79119|maechler|2020-09-03 02:05:07|1|as.Date(c("",rest)) now works
+r79118|luke|2020-09-02 15:11:57|2|Avoid allocation in R_listCompact.
+r79117|kalibera|2020-09-02 07:43:28|2|Clear static variables on non-local returns (PR#17904).
+r79115|ripley|2020-09-02 06:40:08|1|macOS tweaks
+r79113|ripley|2020-09-01 12:47:10|1|mention customizing via config.site, CFLAGS to avoid
+r79112|hornik|2020-09-01 12:39:20|1|Fix PR#17828.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79111|hornik|2020-09-01 12:38:57|1|Fix PR#17451.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79110|hornik|2020-09-01 12:36:46|1|More changes for c79095.
+r79109|hornik|2020-09-01 08:12:27|1|Docs for c79038.
+r79108|hornik|2020-09-01 05:36:05|1|Add mirror.lyrahosting.com.
+r79107|hornik|2020-09-01 05:25:53|1|Drop ftp.yzu.edu.tw.
+r79105|ripley|2020-09-01 05:24:35|1|missing const in declaration
+r79104|maechler|2020-09-01 03:28:10|1|Vectorize() now only keeps relevant objects
+r79103|maechler|2020-09-01 03:19:23|1|quantile(., <pr w/ NA>, names=FALSE) - PR#17892
+r79102|ripley|2020-09-01 00:22:53|1|add timeout arg to curlGetHeaders
+r79100|ripley|2020-08-31 22:35:48|1|add some headers for macOS CLT 12
+r79097|maechler|2020-08-31 12:07:19|1|quantile(0:1, 1+1e-14) et al
+r79096|maechler|2020-08-31 11:56:19|1|from c79094: c.*() methods no longer need to remove NULL
+r79095|maechler|2020-08-31 11:54:45|1|c(..) drops NULL arguments in the generic
+r79093|ripley|2020-08-31 06:30:21|1|updates for gcc 10 and clang 11
+r79092|maechler|2020-08-31 03:21:10|2|re-add  if(....)  line lost in 79080   {needed e.g. for Raspberry Pi 32-bit}
+r79090|ripley|2020-08-30 00:05:34|1|updates for external resources
+r79089|hornik|2020-08-28 00:10:41|1|Tweaks for c79079.
+r79087|ripley|2020-08-27 11:42:17|1|mention macOS svn client
+r79086|hornik|2020-08-26 22:50:22|1|Drop cran.dcc.fc.up.pt.
+r79084|maechler|2020-08-26 01:40:41|1|mv recent dgamma() & pchisq() checks to new d-p-q-r*.R
+r79082|maechler|2020-08-26 01:20:27|1|oops: update comment
+r79081|ripley|2020-08-26 01:18:09|1|update for imminent clang 11
+r79080|maechler|2020-08-25 12:39:23|2|move last half of d-p-q-r-tests.R to new "regr.test" file d-p-q-r-tst-2.R, [n] and primarily use that from now on
+r79079|hornik|2020-08-25 05:39:07|1|Tweaks for c() methods.
+r79078|hornik|2020-08-25 05:37:49|1|Tweaks.
+r79077|deepayan|2020-08-25 03:51:39|1|suppress creation of HTML redirect files when not processing package help
+r79076|ripley|2020-08-25 02:06:46|1|mention fallback if HOME is unset/empty
+r79075|deepayan|2020-08-24 23:32:39|1|help system now prefers topic over filename in external package help links
+r79074|ripley|2020-08-24 11:13:25|1|add back some indirect dependencies via libR.a
+r79072|ripley|2020-08-24 03:24:41|1|more packages without -fopenmp in link
+r79071|hornik|2020-08-23 09:43:57|1|Tweaks for c79037.
+r79070|ripley|2020-08-23 08:13:51|1|add fallback if HOME is not set
+r79068|ripley|2020-08-23 05:01:05|1|tweaks about macOS
+r79066|ripley|2020-08-23 04:59:01|1|people forgot the copyright date
+r79064|ripley|2020-08-22 23:18:34|1|add support for path.expand("~user") even without readline
+r79062|ripley|2020-08-22 06:56:51|1|more on libedit emulation of readline
+r79061|ripley|2020-08-21 23:36:17|1|comments re readline and emulation. remove unused function check
+r79060|hornik|2020-08-21 23:21:01|1|Tweaks for references.
+r79059|deepayan|2020-08-21 22:18:07|1|preliminary support for preferring topic over filename in external package help links (off by default for now)
+r79058|hornik|2020-08-21 06:46:48|1|Consolidate pointers to R manuals.
+r79057|hornik|2020-08-20 08:16:18|1|Tweaks.
+r79056|pd|2020-08-20 05:30:34|1|logLik.nls fix, PR16100
+r79055|kalibera|2020-08-20 03:15:24|2|Fix R_allocLD (PR#16534).
+r79054|hornik|2020-08-20 00:53:08|1|Fix problems reported by Antoine Fabri <antoine.fabri@gmail.com>.
+r79053|hornik|2020-08-20 00:51:40|1|Improvement by Toby Hocking <tdhock5@gmail.com>>
+r79052|pd|2020-08-19 23:04:00|1|also allow data=NULL in model.frame
+r79051|ripley|2020-08-19 22:55:39|1|grammar and markup
+r79050|pd|2020-08-19 10:50:10|1|check data arg better in model.frame()
+r79048|ripley|2020-08-19 07:47:18|1|tweaks
+r79046|ripley|2020-08-19 07:02:47|3|mention zsh quirks on case-insensitive macOS [n] a bit more on the environment in which configure is run
+r79045|kalibera|2020-08-19 01:49:35|3|Expand commented out checks to make them consistent in case re-enabled [n] again (related to PR#17888).
+r79043|ripley|2020-08-18 21:54:24|1|tweaks for macOS
+r79042|ripley|2020-08-18 21:53:46|1|tweaks for macOS
+r79041|pd|2020-08-18 10:48:11|1|fix blunder with logical-as-factor in model.matrix
+r79040|kalibera|2020-08-18 10:29:02|2|Fixes for building with gcc 10 on Windows.
+r79039|ripley|2020-08-18 08:45:16|1|change default for R_check_bogus_return but set for --as-cran
+r79038|hornik|2020-08-18 02:12:51|1|Fix PR#17180.  Patch by Sebastian Meyer <seb.meyer@fau.de>.
+r79037|hornik|2020-08-18 02:11:43|1|Fix PR#17277.
+r79036|hornik|2020-08-18 02:09:23|1|Improve URL checks for 301 redirections.
+r79034|ripley|2020-08-17 22:48:09|1|tweaks, including suggestions from Tomas K
+r79033|hornik|2020-08-17 04:16:20|1|Updated.
+r79032|kalibera|2020-08-17 02:15:15|2|Typos.
+r79031|ripley|2020-08-16 22:40:08|1|up
+r79029|ripley|2020-08-16 22:32:36|1|tweaks for macOS
+r79027|ripley|2020-08-15 08:14:31|1|updates on Tcl/Tk for macOS
+r79026|ripley|2020-08-15 00:23:26|1|libR.a was sometimes made unnecessarily
+r79025|pd|2020-08-14 16:20:59|1|maintainer-mode changes
+r79024|ripley|2020-08-14 12:04:13|1|typo
+r79023|ripley|2020-08-14 10:49:49|1|update darwin -> macOS mapping
+r79022|ripley|2020-08-14 10:48:54|1|avoid a gcc/sanitizer compilation warning
+r79021|kalibera|2020-08-14 09:11:32|2|Validity tests for UTF-8 string truncation, from Brodie Gaslam.
+r79020|hornik|2020-08-14 03:17:25|1|Updated.
+r79019|hornik|2020-08-13 22:35:05|1|Add mirror.niser.ac.in.
+r79018|hornik|2020-08-13 22:23:51|1|cran.mirror.garr.it is back to ok.
+r79017|lawrence|2020-08-13 16:00:08|2|update po/pot files
+r79015|ripley|2020-08-13 13:31:30|1|cph should be the legal name
+r79014|kalibera|2020-08-13 08:33:27|2|Docs update (fill argument of cat), PR16758, from Sebastian Meyer.
+r79013|kalibera|2020-08-13 04:23:36|3|Docs update (logical indexing on data frames), PR15876, from Sebastian [n] Meyer.
+r79012|kalibera|2020-08-13 04:07:12|3|Fix horizontal position of leaves in dendrogram (PR14938, from Sebastian [n] Meyer).
+r79011|kalibera|2020-08-12 09:43:27|3|Warn when TRE compilation fails to make sure that TRE error description is [n] visible even for very long patterns (PR#16600).
+r79010|hornik|2020-08-11 11:34:46|1|Improve URL checks for 301 redirections.
+r79009|hornik|2020-08-11 11:34:16|1|Regtest for c78991 by Sebastian Meyer <seb.meyer@fau.de>.
+r79008|hornik|2020-08-11 11:32:44|1|Entry for c78989.
+r79007|kalibera|2020-08-11 09:28:30|4|Ignore encoding="UTF-8" argument of parse() with a warning when running in [n] non-UTF-8 MBCS locale to prevent silent misinterpretation of input [n] (PR#16819).
+r79006|kalibera|2020-08-11 08:30:08|2|Improve error message for table(list()), PR#17168 (from Suharto Anggono).
+r79005|kalibera|2020-08-11 07:54:43|2|Example for str2expression (PR#17471, from Sebastian Meyer).
+r79004|hornik|2020-08-11 04:39:05|1|Fix typos spotted by Rui Barradas <ruipbarradas@sapo.pt>.
+r79002|ripley|2020-08-11 00:40:54|1|doc update  on OpenMP
+r79001|hornik|2020-08-11 00:18:29|1|cran.mirror.garr.it is no longer ok.
+r79000|kalibera|2020-08-10 12:47:34|3|Initialize buffer before deparsing to be robust against (invalid) [n] zero-length source references (PR#17876).
+r78999|kalibera|2020-08-10 09:41:49|2|Port 78795 to R-patched.
+r78996|ripley|2020-08-09 23:32:09|1|up
+r78995|ripley|2020-08-09 23:26:59|1|doc tweaks
+r78994|hornik|2020-08-09 23:06:55|1|ftp.harukasan.org and ftp.cixug.es are back to ok.
+r78993|hornik|2020-08-09 09:44:32|1|New version from AZ.

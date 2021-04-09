@@ -1,0 +1,33 @@
+lpridge|Burkhardt Seifert ; Packaged for R by Martin Maechler|1|NA|1|2|2|0|0|0
+RcppDE|Dirk Eddelbuettel extending DEoptim  which itself is based on DE-Engine|1|NA|1|2|2|0|0|0
+excel.link|Gregory Demin. To comply CRAN policy includes source code from 'RDCOMClient'  by Duncan Temple Lang|1|NA|1|2|2|0|0|0
+REddyProcNCDF|Department for Biogeochemical Integration at MPI-BGC, Jena, Germany|1|NA|1|3|6|0|0|1
+ismev|Original S functions written by Janet E. Heffernan with R port|1|NA|1|3|3|0|0|0
+ismev|R documentation provided by Alec G. Stephenson|2|NA|1|3|3|0|0|0
+
+hyperSMURF
+
+rSFA|Patrick Koch; Bug hunting|3|NA|1|6|7|0|0|0
+
+catdap|The Institute of Statistical Mathematics  catdap author details|1|NA|1|2|2|0|0|0
+R2WinBUGS|Uwe Ligges. With considerable contributions by Gregor Gorjanc|3|NA|1|6|6|0|0|0
+
+pAnalysis|PhD; Naval Research Laboratory. Greg Trafton|4|NA|1|5|6|0|0|0
+
+deamer|Fabienne Comte. Contribution from Claire Lacour|3|NA|1|4|4|0|0|0
+
+p2distance|A.J. Perez-Luque; R. Moreno; R. Perez-Perez|1|NA|1|3|3|0|0|0
+
+FlowRegEnvCost|Silvestre Garcia de Jalon; Javier Martinez-Lopez; Marta Gonzalez del Tanago; Carlos Alonso; Diego Garcia de Jalon|1|NA|1|2|2|0|0|0
+
+spatstat|with substantial contributions of code by Kasper Klitgaard Berthelsen; Ottmar Cronie; Tilman Davies; Yongtao Guan; Ute Hahn; Abdollah Jalilian; Marie-Colette van Lieshout; Greg McSwiggan; Tuomas Rajala; Suman Rakshit; Dominic Schuhmacher; Rasmus Waagepetersen;|4|NA|1|6|7|0|0|0
+
+netgwas|0000-0001-6762-5433&gt;|3|NA|1|5|5|0|0|0
+
+assertive.base|Rasmus B&lt;c3&gt;&lt;a5&gt;&lt;c3&gt;&lt;a5&gt;th|9|NA|1|11|13|0|0|0
+
+sporm|Zhong Guan; Cheng Peng|1|NA|1|2|2|0|0|0
+
+
+
+

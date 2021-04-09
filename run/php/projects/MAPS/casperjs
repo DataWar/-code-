@@ -1,0 +1,20 @@
+'https://jcb.lunaimaging.com/luna/servlet/view/all?os=0'
+'Q:/project-MAPS/2021-04/jcb/pages/0001/index.html'
+{
+    "args": [],
+    "options": {
+        "casper-path": "C:\\casperjs",
+        "cli": true,
+        "remote": "'https://jcb.lunaimaging.com/luna/servlet/view/all?os=0'",
+        "local": "'Q:/project-MAPS/2021-04/jcb/pages/0001/index.html'"
+    },
+    "raw": {
+        "args": [],
+        "options": {
+            "casper-path": "C:\\casperjs",
+            "cli": true,
+            "remote": "'https://jcb.lunaimaging.com/luna/servlet/view/all?os=0'",
+            "local": "'Q:/project-MAPS/2021-04/jcb/pages/0001/index.html'"
+        }
+    }
+}

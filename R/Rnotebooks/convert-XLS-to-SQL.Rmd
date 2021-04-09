@@ -1,0 +1,139 @@
+---
+title: 'Convert XLS to SQL'
+---
+
+# Setup
+
+## include-setup.R
+
+This one file has all the basic functions we need to load more functions.
+
+### source setup
+```{r}
+github.monte.raw = "https://raw.githubusercontent.com/MonteShaffer/";
+include.setup = paste0(github.monte.raw, "humanVerse/main/include.setup.R");
+source(include.setup);
+```
+
+### source (humanVerse/R)
+```{r}
+github.monte.http = "https://github.com/MonteShaffer/";
+######## we will parse this page to get a list of the .R functions to include ########
+github.monte.humanVerse = paste0(github.monte.http, "humanVerse/tree/main/humanVerse/R/"); 
+
+######## you can pass flag `force.download = TRUE` if you want to make certain it is not coming from cache ########
+
+###### R::humanVerse #####
+includeGithubFolder(github.monte.humanVerse); 
+```
+
+### source (humanVerse/misc)
+```{r}
+######## we will parse this page to get a list of the .R functions to include ########
+github.monte.misc = paste0(github.monte.http, "humanVerse/tree/main/misc/"); 
+
+######## you can pass flag `force.download = TRUE` if you want to make certain it is not coming from cache ########
+
+###### R::humanVerse #####
+includeGithubFolder(github.monte.misc);
+```
+
+# Load file
+```{r}
+path.schema = "C:/_git_/__NIC__/data/database-schema/";
+file.xls = paste0(path.schema, "CRAN.xlsx");
+library(readxl);
+```
+
+# List tabs
+```{r}
+tabs = excel_sheets(file.xls);
+tabs;
+```
+
+# Get one sheet as dataframe
+```{r}
+tab = tabs[1];
+my.sheet = as.data.frame( read_excel(file.xls, sheet=tab) );
+my.sheet;
+```
+
+# SQL templates
+```{r}
+template.create = '
+ CREATE TABLE IF NOT EXISTS `{mytable}` (
+{my.columns}
+ )';
+
+
+# NOT NULL ... DEFAULT ... 
+template.col = '
+   `{mycolumn}` {mytype} {mynull} {mydefault}
+';
+
+template.alter = '
+ ALTER TABLE `{mytable}`
+{my.alters}
+ COMMIT; ';
+
+template.primary = '
+   ADD PRIMARY KEY (`{primary.key}`)
+';
+
+template.primary = '
+   ADD KEY `{index.key}` (`{index.key}`)
+';
+
+# ALTER TABLE `monte`
+#   ADD PRIMARY KEY (`p_name`),
+#   ADD KEY `c_version` (`c_version`);
+# COMMIT;
+
+# CREATE TABLE `nic5` (
+#   `p_name` varchar(255) NOT NULL,
+#   `c_version` varchar(255) NOT NULL,
+#   `v_date` date NOT NULL,
+#   `description` text NOT NULL,
+#   `min_r_val` float NOT NULL
+# )
+```
+
+# Write SQL for tab
+
+```{r}
+nr = nrow(my.sheet);
+rows = character(nr);
+
+for(i in 1:nr)
+  {
+  rinfo = my.sheet[i, ];
+  
+  my.col = template.col;
+  my.col = str_replace("{mycolumn}", rinfo$variable, my.col);
+  my.col = str_replace("{mytype}", rinfo$type, my.col);
+  
+  
+  
+    primary = if(rinfo$key == 1) { " PRIMARY KEY " } else { "" }
+  my.col = str_replace("{myprimary}", primary, my.col);
+    index = if(rinfo$index == 1) { " PRIMARY KEY " } else { "" }
+  my.col = str_replace("{myindex}", index, my.col);
+  
+  
+   
+  }
+  
+  
+
+  
+  
+  
+  
+  
+
+
+```
+
+
+
+# Wrap into functions

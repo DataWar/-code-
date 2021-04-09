@@ -1,0 +1,25 @@
+function parseAuthors($astr, $mstr,  $method = "roles")
+		{
+		echo"<PRE>"; echo"\n\n"; print_r( explode(",", $astr) ); echo"\n\n"; print_r($astr); echo" ---> "; print_r($mstr); echo"\n\n"; # exit; 
+			$astr = str_replace(" (Institute of Marine Research)","",$astr);  # ggOceanMaps
+			$astr = str_replace(" (jQuery library; authors listed in inst/htmlwidgets/lib/jquery/jquery-AUTHORS.txt)","",$astr);  # sparkline 
+			$astr = str_replace(" (jQuery library)","",$astr);  # sparkline 
+			$astr = str_replace(" (jquery.sparkline library in htmlwidgets/lib, https://github.com/gwatts/jquery.sparkline)","",$astr);  # sparkline 
+			$astr = str_replace(" (Centre of Biomedical Informatics, Institute of Computer Science, Academy of Sciences of the Czech Republic)","",$astr);  # forensic
+			$astr = str_replace(" (Joëlle reviewed the package for rOpenSci, see https://github.com/richelbilderbeek/onboarding/issues/209)","",$astr);  # babette 
+			$astr = str_replace(" (David reviewed the package for rOpenSci, see https://github.com/richelbilderbeek/onboarding/issues/209)","",$astr);  # babette 
+			$astr = str_replace(" (d3.js library in htmlwidgets/lib, http://d3js.org)","",$astr);  # parallelPlot
+			
+			
+			
+			
+			$astr = str_replace(" (Is the author of the MINPACK-1 Least Squares Fitting Library)","",$astr);  # rGEDI 
+			$astr = str_replace(" (Is the author of the MINPACK-1 Least Squares Fitting Library)","",$astr);  # rGEDI 
+			$astr = str_replace(" (Is the author of the MINPACK-1 Least Squares Fitting Library)","",$astr);  # rGEDI 
+			$astr = str_replace(" (Is the author of the enhanced MINPACK-1 Least Squares Fitting Library)","",$astr);  # rGEDI 
+			$astr = str_replace(" (R port)","",$astr);  # date 
+			$astr = str_replace(" (C++ code originally from Jeffrey Bogan, but completely re-written)","",$astr);  # ggOceanMaps
+			$astr = str_replace(" (Julien Brun reviewed the package, see https://github.com/ropensci/onboarding/issues/341)","",$astr);  # ggOceanMaps
+			
+			
+			(Maria Munafó reviewed the package, see https://github.com/ropensci/onboarding/issues/341)
